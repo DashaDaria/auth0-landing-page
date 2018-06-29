@@ -1,16 +1,37 @@
+
 .intro-container {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 62.82%;
+  position: relative;
   background: #212127;
-  width: 1440px;
+  width:100%;
   height: 1101px;
+  border: 2px solid red;
 }
 
-.intro-video {
-  height: 100%;
-  width: 100%;
-  padding: none;
+.intro-header {
+  position: absolute;
+  color: #FFFFFF;
+  height: 80px;
+  top: 247px;
+  left: 264px;
+  right: 264px;
+  line-height: 80px;
+  font-size: 54px;
+  text-align: center;
+  letter-spacing: -0.9px;
+}
+
+.identity-color {
+  color: #EB5424;
+}
+
+.intro-subheader {
+  position: absolute;
+  left: 330px;
+  right: 330px;
+  top: 363px;
+  bottom: 85.04%;
+  line-height: 40px;
+  font-size: 18px;
+  text-align: center;
+  color: #D0D2D3;
 }
