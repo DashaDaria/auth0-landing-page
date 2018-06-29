@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Intro from  './Intro';
 import Static from  './Static';
+import Columns from  './Columns';
 import VideoModule from  '../containers/VideoModule';
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
         <VideoModule />
         <Intro />
         <Static />
+        <Columns />
       </div>
     );
   }

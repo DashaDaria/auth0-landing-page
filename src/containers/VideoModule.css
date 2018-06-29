@@ -46,10 +46,12 @@
   top: 25%;
   padding-left: 2%;
   padding-right: 2%;
-
+  text-align: center;
 }
 
 .nav-button {
-  margin: 1em;
+  margin: 3em;
   border: 0;
+  background: none;
+  text-transform: uppercase;
 }

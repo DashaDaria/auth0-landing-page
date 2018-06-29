@@ -1,0 +1,12 @@
+
+.columns {
+  display: flex;
+  align-items: flex-start;
+  height: 30px;
+  border: 2px solid pink;
+  top: 60%;
+}
+
+.left, .right {
+  border: 2px solid grey;
+}
