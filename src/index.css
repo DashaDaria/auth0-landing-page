@@ -1,7 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
+@font-face {
+  font-family: 'FaktProUI-Blond';
+  src:local('FaktProUI-Blond'), url('./fonts/FaktProUI-Blond.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FaktProUI-SemiBold';
+  src:local('FaktProUI-SemiBold'), url('./fonts/FaktProUI-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FaktProUI-Medium';
+  src:local('FaktProUI-Medium'), url('./fonts/FaktProUI-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FaktPro-Blond';
+  src:local('FaktPro-Blond'), url('./fonts/FaktPro-Blond.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FaktPro-Normal';
+  src:local('FaktPro-Normal'), url('./fonts/FaktPro-Normal.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'FaktProUI-Blond', 'Roboto Mono', monospace;
+}
+
+html {
+  background: black;
 }

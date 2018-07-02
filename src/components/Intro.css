@@ -15,7 +15,7 @@
   left: 264px;
   right: 264px;
   line-height: 80px;
-  font-size: 54px;
+  font-size: 72px;
   text-align: center;
   letter-spacing: -0.9px;
 }
@@ -31,7 +31,8 @@
   top: 363px;
   bottom: 85.04%;
   line-height: 40px;
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
   color: #D0D2D3;
+  font-family: 'FaktPro-Blond';
 }

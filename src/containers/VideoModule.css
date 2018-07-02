@@ -1,6 +1,6 @@
 .video-container {
   position: absolute;
-  top: 28%;
+  top: 22%;
   left: 8.33%;
   right: 8.33%;
   width: 1200px;
@@ -15,22 +15,21 @@
   position: relative;
   top: 88px;
   line-height: 60px;
-  font-size: 24px;
+  font-size: 36px;
   text-align: center;
   color: #333333;
-  border: 2px solid blue;
 }
 
 .auth0-pitch {
   position: relative;
   top: 12%;
   line-height: 32px;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   color: #333333;
   padding-left: 8em;
   padding-right: 8em;
-  border: 2px solid blue;
+  font-family: 'FaktPro-Normal';
 }
 
 .video {
@@ -54,4 +53,8 @@
   border: 0;
   background: none;
   text-transform: uppercase;
+  font-family: 'FaktProUI-SemiBold';
+  line-height: 23px;
+  font-size: 14px;
+
 }

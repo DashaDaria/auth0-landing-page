@@ -9,8 +9,8 @@ class VideoModule extends Component {
   render() {
     return (
       <div className="video-container">
-        <div className="auth0-intro">What/s Auth0</div>
-        <div className="auth0-pitch">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</div>
+        <div className="auth0-intro">What's' Auth0</div>
+        <div className="auth0-pitch">{information.use.text}</div>
         <div className="video"></div>
         <div className="navigation">
           <button className="nav-button">Use Case</button>

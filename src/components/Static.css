@@ -2,13 +2,18 @@
   background: #FFFFFF;
   border: 2px solid green;
   width: 100%;
-  height: 1062px;
+  height: 73em;
   position: relative;
 }
+.map {
+  position: absolute;
+  right: 0;
+  bottom:0;
+}
+
 .brands{
   position: absolute;
-  height: 750px;
-  border: 2px solid black;
+  height: 44em;
   width: 100%;
   top: 310px;
 }
@@ -19,36 +24,43 @@
   left: 291px;
   right: 291px;
   line-height: 54px;
-  font-size: 24px;
+  font-size: 36px;
   text-align: center;
-  top: 256px;
+  top: 220px;
   color: #333333;
 }
 
 .logos-container {
-  border: 5px solid red;
   position: relative;
   top: 40%;
-  height: 270px;
-  margin-left: 241px;
-  margin-right: 241px;
-  width: 960px;
 }
 
 .logo-row {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
-  border: 2px solid yellow;
-  width: 192px;
-  height: 60px;
-  margin: 10px;
-  vertical-align: middle;
+  width: 130px;
+  margin: 3em 2em 0em 2em;
+
+}
+
+.image-fit {
+  display: block;
+  width: 100%;
+	height: auto;
+  max-height: 60px;
+  margin: auto;
+  filter: grayscale();
 }
 
 .see-all {
   position: relative;
   top: 50%;
   text-align: center;
+  font-family: 'FaktPro-Normal';
+  font-size: 20px;
+  line-height: 40px;
 }
