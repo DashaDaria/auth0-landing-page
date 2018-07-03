@@ -24,31 +24,24 @@ class Static extends Component {
     <div className="static-container">
       <div className="brands">
       <img className="map" src={BG_map} alt="map"/>
-        <div className="brands-title">Join thousands of companies that trust Auth0 everyday</div>
+        <p className="brands-title">Join thousands of companies that trust Auth0 everyday</p>
         <div className="logos-container">
-
-          <div className="logo-row">
+          <div className="all-logos">
             <div className="logo"><img className="image-fit" src={atalssian} alt="atalssian"/></div>
             <div className="logo"><img className="image-fit" src={vmware} alt="vmware"/></div>
             <div className="logo"><img className="image-fit" src={polaris} alt="polaris"/></div>
             <div className="logo"><img className="image-fit" src={nvidia} alt="nvidia"/></div>
             <div className="logo"><img className="image-fit" src={amd} alt="amd"/></div>
-          </div>
-
-          <div className="logo-row">
             <div className="logo"><img className="image-fit" src={newscorp} alt="newscorp"/></div>
             <div className="logo"><img className="image-fit" src={jetairways} alt="jetairways"/></div>
             <div className="logo"><img className="image-fit" src={mozilla} alt="mozilla"/></div>
             <div className="logo"><img className="image-fit" src={harpercollins} alt="harpercollins"/></div>
             <div className="logo"><img className="image-fit" src={bluetooth} alt="bluetooth"/></div>
-          </div>
-
-          <div className="logo-row">
             <div className="logo"><img className="image-fit" src={pbs} alt="pbs"/></div>
             <div className="logo"><img className="image-fit" src={ms} alt="ms"/></div>
             <div className="logo"><img className="image-fit" src={aeromexico} alt="aeromexico"/></div>
             <div className="logo"><img className="image-fit" src={mazda} alt="mazda"/></div>
-          </div>
+        </div>
 
         </div>
         <div className="see-all">See All Customers <span className="caret-right"></span></div>

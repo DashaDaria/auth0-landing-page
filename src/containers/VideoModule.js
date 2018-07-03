@@ -16,7 +16,8 @@ class VideoModule extends Component {
 
   goToImage(index){
     this.setState({
-      activeIndex: index
+      activeIndex: index,
+      autoPlay: true
     })
   }
 
@@ -42,6 +43,7 @@ class VideoModule extends Component {
              index={index}
              activeIndex={this.state.activeIndex}
              svg={asset.desktop}
+             video={asset.video}
             />
           )}
 

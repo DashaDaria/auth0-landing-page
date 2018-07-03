@@ -12,20 +12,18 @@
 
 .brands{
   position: absolute;
+  text-align: center;
   height: 44em;
-  width: 100%;
   top: 310px;
 }
 
 .brands-title {
   position: absolute;
-  height: 54px;
-  left: 291px;
-  right: 291px;
+  width: 100%;
   line-height: 54px;
   font-size: 36px;
   text-align: center;
-  top: 220px;
+  top: 25%;
   color: #333333;
 }
 
@@ -34,10 +32,14 @@
   top: 40%;
 }
 
-.logo-row {
+.all-logos {
   display: flex;
+  align-content: center;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .logo {
@@ -62,4 +64,27 @@
   font-family: 'FaktPro-Normal';
   font-size: 20px;
   line-height: 40px;
+}
+
+@media screen and (max-width: 650px){
+
+.static-container{
+  height: 90em;
+}
+.brands-title {
+  padding-left: 30%;
+  padding-right: 30%;
+  width: auto;
+}
+
+  .map {
+    display: none;
+  }
+
+  .all-logos {
+    margin-top: 10px;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
 }
