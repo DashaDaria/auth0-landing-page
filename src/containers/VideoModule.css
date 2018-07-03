@@ -31,3 +31,10 @@
   padding-right: 8em;
   font-family: 'FaktPro-Normal';
 }
+
+.navigation {
+  position: relative;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: center;
+}
