@@ -1,0 +1,15 @@
+.desktop-svg {
+  display: none;
+}
+
+.desktop-svg-active {
+  margin-top: 11%;
+  height: 32em;
+  width:100%;
+  display: flex;
+  justify-content: center
+}
+
+.desktop-svg-active img {
+  margin: 0;
+}

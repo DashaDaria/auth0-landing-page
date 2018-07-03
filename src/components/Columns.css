@@ -2,7 +2,6 @@
 .columns {
   background: #FFFFFF;
   display: flex;
-  border: 2px solid pink;
   top: 60%;
 }
 

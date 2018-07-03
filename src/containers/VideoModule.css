@@ -20,20 +20,24 @@
   color: #333333;
 }
 
-.auth0-pitch {
+.asset-text {
+  display: none;
+
+}
+
+.asset-text-active {
   position: relative;
   top: 12%;
   line-height: 32px;
   font-size: 20px;
   text-align: center;
-  color: #333333;
+  color: #5C666F;
   padding-left: 8em;
   padding-right: 8em;
   font-family: 'FaktPro-Normal';
 }
 
 .navigation {
-  position: relative;
   padding-left: 2%;
   padding-right: 2%;
   text-align: center;

@@ -72,7 +72,7 @@ const assetData = [
   },
   {
     name: "Result",
-    text:"Your use case(s) + Your tech stack + Your deployment model + Your customization + Your changing needs = a seamless and secure Auth0 Identity solution that adapts to your future",
+    text:"Your use case(s) + Your tech stack + Your deployment model + Your customization + Your changing needs = a seamless and secure Auth0 Identity solution that adapts to your future.",
     video: result,
     desktop: resultDesktop,
     mobile: resultMobile

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './VideoModule.css';
-import Videos from './Videos';
-import VideoText from './VideoText';
+import AssetCreative from './AssetCreative';
+import AssetText from './AssetText';
 import NavButton from './NavButton';
 
 
@@ -24,8 +24,27 @@ class VideoModule extends Component {
     return (
       <div className="video-container">
         <div className="auth0-intro">What's' Auth0 </div>
-        <VideoText />
-        <Videos />
+
+
+        {this.props.assets.map((asset, index) =>
+          <AssetText
+            key={index}
+            index={index}
+            activeIndex={this.state.activeIndex}
+            text={asset.text}
+           />
+         )}
+
+
+         {this.props.assets.map((asset, index) =>
+           <AssetCreative
+             key={index}
+             index={index}
+             activeIndex={this.state.activeIndex}
+             svg={asset.desktop}
+            />
+          )}
+
 
         <div className="navigation">
           {this.props.assets.map((asset, index) =>
