@@ -8,9 +8,7 @@ import result from '../videos/05_Result.mp4';
 
 
 class Videos extends Component {
-  constructor(props){
-    super(props)
-  }
+
 
   render() {
     const videos = [ usecases, tech, deploy, custom, result ]

@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div className="app-container">
-        <VideoModule />
+        <VideoModule  />
         <Intro />
         <Static />
         <Columns />

@@ -23,7 +23,7 @@ class Static extends Component {
     return (
     <div className="static-container">
       <div className="brands">
-      <img className="map" src={BG_map}/>
+      <img className="map" src={BG_map} alt="map"/>
         <div className="brands-title">Join thousands of companies that trust Auth0 everyday</div>
         <div className="logos-container">
 

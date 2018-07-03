@@ -37,11 +37,11 @@ class Columns extends Component {
               <div className="number-flag-container">
                 <div className="column-numbers">3</div>
                   <div className="flag-container">
-                    <img className="flag" src={usa}/>
-                    <img className="flag" src={au}/>
+                    <img className="flag" src={usa} alt="usa"/>
+                    <img className="flag" src={au} alt="au"/>
                     </div>
                   <div className="flag-container-eu">
-                    <img className="flag-eu" src={eu} />
+                    <img className="flag-eu" src={eu} alt="eu" />
                   </div>
                 </div>
 
