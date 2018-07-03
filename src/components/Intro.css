@@ -6,7 +6,9 @@
   height: 1101px;
   border: 2px solid red;
 }
-
+.intro-text-container {
+  display: relative
+}
 .intro-header {
   position: absolute;
   color: #FFFFFF;
@@ -29,10 +31,35 @@
   left: 330px;
   right: 330px;
   top: 363px;
-  bottom: 85.04%;
   line-height: 40px;
   font-size: 24px;
   text-align: center;
   color: #D0D2D3;
   font-family: 'FaktPro-Blond';
+}
+
+.intro-video {
+  position: absolute;
+  top: -25em;
+  width: 100%;
+}
+
+.caret-down {
+  border-top: 6px solid white;
+  border-left: 5px solid rgba(0, 0, 0, 0);
+  border-right: 5px solid rgba(0, 0, 0, 0);
+  display: inline-block;
+  width:0;
+  position: absolute;
+  top: 32em;
+  margin-left: 45em;
+}
+
+.line {
+  opacity: 0.3;
+  width: 1px;
+  background-color: #FFFFFF;
+  height: 10em;
+  margin-left: 45.28em;
+  margin-top: 32em;
 }

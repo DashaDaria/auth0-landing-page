@@ -32,17 +32,10 @@
   font-family: 'FaktPro-Normal';
 }
 
-.video {
-  position: relative;
-  border: 2px solid blue;
-  background: green;
-  height: 25em;
-  top: 18%;
-}
+
 
 .navigation {
   position: relative;
-  top: 25%;
   padding-left: 2%;
   padding-right: 2%;
   text-align: center;
@@ -56,5 +49,13 @@
   font-family: 'FaktProUI-SemiBold';
   line-height: 23px;
   font-size: 14px;
+}
 
+.circle {
+  height:8px;
+  width: 8px;
+  border-radius: 4px;
+  background: #000000;
+  margin-left: 50%;
+  margin-bottom: 5px;
 }
