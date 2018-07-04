@@ -39,10 +39,10 @@ class Columns extends Component {
                   <div className="flag-container">
                     <img className="flag" src={usa} alt="usa"/>
                     <img className="flag" src={au} alt="au"/>
-                    </div>
-                  <div className="flag-container-eu">
-                    <img className="flag-eu" src={eu} alt="eu" />
+                    <img className="flag" src={eu} alt="eu" />
                   </div>
+
+
                 </div>
 
                 <div className="column-fineprint">Clusters</div>
