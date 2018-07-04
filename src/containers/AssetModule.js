@@ -26,27 +26,27 @@ import resultMobile from '../svg/mobile/05_Result.svg';
 
 
 class AssetModule extends Component {
-  constructor(){
+  constructor() {
     super()
     this.state = {
       autoplay: true,
-      active: assets.usecase
+      current_video: assets.usecase
     }
+    this.changeVideo  = this.changeVideo.bind(this)
   }
 
-  renderVideo(){
-
+  changeVideo(video_name) {
+    let next_video = assets[video_name]
+    this.setState({
+      current_video: next_video
+    })
   }
-
-
 
   render() {
     return (
       <div className="video-container">
         <div className="auth0-intro">What's' Auth0 </div>
-
-        <VideoAutoplay source={this.state.active.video.source}/>
-
+        <VideoAutoplay video={this.state.current_video} changeVideo={this.changeVideo}/>
       </div>
     );
   }
@@ -55,14 +55,11 @@ class AssetModule extends Component {
 export default AssetModule;
 
 const assets = {
-
   usecase: {
     name: "Use Case",
     text: "Choose your use case. Auth0’s Universal Identity Platform for web, mobile and IoT can handle any of them — B2C, B2B, B2E or a combination.",
-    video: {
-      source: usecase,
-      duration: 8
-    },
+    source: usecase,
+    duration: 8000,
     next_video: 'tech',
     desktop: usecaseDesktop,
     mobile: usecaseMobile,
@@ -71,10 +68,8 @@ const assets = {
   tech: {
     name: "Technologies",
     text:"Your language. Your stack. Auth0 can connect to any application or API. Our 65+ SDKs and pre-configured Quickstarts offer rapid integration.",
-    video: {
-      source: tech,
-      duration: 10
-    },
+    source: tech,
+    duration: 10000,
     next_video: 'deploy',
     desktop: techDesktop,
     mobile: techMobile,
@@ -83,10 +78,8 @@ const assets = {
   deploy: {
     name: "Deployment",
     text:"Choose the deployment that suits your needs — your cloud, Auth0 Cloud, on-premise, or hybrid.",
-    video: {
-      source: deploy,
-      duration: 6
-    },
+    source: deploy,
+    duration: 6000,
     next_video: 'custom',
     desktop: deployDesktop,
     mobile: deployMobile,
@@ -95,10 +88,8 @@ const assets = {
   custom: {
     name: "Customization",
     text:"Easily customize your app’s authentication process by writing code or picking one of our 100+ pre-built Auth0 Rules and Extensions.",
-    video: {
-      source: custom,
-      duration: 30
-    },
+    source: custom,
+    duration: 30000,
     next_video: 'result',
     desktop: customDesktop,
     mobile: customMobile,
@@ -107,10 +98,8 @@ const assets = {
   result: {
     name: "Result",
     text:"Your use case(s) + Your tech stack + Your deployment model + Your customization + Your changing needs = a seamless and secure Auth0 Identity solution that adapts to your future.",
-    video: {
-      source: result,
-      duration: 4
-    },
+    source: result,
+    duration: 4000,
     next_video: 'usecase',
     desktop: resultDesktop,
     mobile: resultMobile,

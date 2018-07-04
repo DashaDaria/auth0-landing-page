@@ -19,3 +19,13 @@
   height: 26em;
   margin-top: 10em;
 }
+
+
+.auth0-intro {
+  position: relative;
+  top: 88px;
+  line-height: 60px;
+  font-size: 36px;
+  text-align: center;
+  color: #333333;
+}
