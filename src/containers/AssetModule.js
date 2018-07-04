@@ -46,7 +46,9 @@ class AssetModule extends Component {
     return (
       <div className="video-container">
         <div className="auth0-intro">What's' Auth0 </div>
+
         <VideoAutoplay video={this.state.current_video} changeVideo={this.changeVideo}/>
+
       </div>
     );
   }
