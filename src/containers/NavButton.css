@@ -1,5 +1,5 @@
 .nav-button {
-  margin: 3em;
+  margin: 2em;
   border: 0;
   background: none;
   text-transform: uppercase;
@@ -12,7 +12,7 @@
 }
 
 .nav-button-clicked {
-  margin: 3em;
+  margin: 2em;
   border: 0;
   background: none;
   text-transform: uppercase;
