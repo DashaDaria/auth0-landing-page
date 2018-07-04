@@ -1,94 +1,58 @@
 import React, { Component } from 'react';
-import './VideoModule.css';
-import AssetCreative from './AssetCreative';
-import AssetText from './AssetText';
-import NavButton from './NavButton';
-import VideoAutoplay from './VideoAutoplay';
+import './AssetModule.css';
+import VideoAutoplay from './VideoAutoplay'
+
+////////VIDEOS//////
+import usecase from '../videos/01_UseCase.mp4';
+import tech from '../videos/02_Technologies.mp4';
+import deploy from '../videos/03_Deployment.mp4';
+import custom from '../videos/04_Customization.mp4';
+import result from '../videos/05_Result.mp4';
+
+////////DESKTOP SVG//////
+import usecaseDesktop from '../svg/desktop/01_UseCase.svg';
+import techDesktop from '../svg/desktop/02_Technologies.svg';
+import deployDesktop from '../svg/desktop/03_Deployment.svg';
+import customDesktop from '../svg/desktop/04_Customization.svg';
+import resultDesktop from '../svg/desktop/05_Result.svg';
+
+////////MOBILE SVG//////
+import usecaseMobile from '../svg/mobile/01_UseCase.svg';
+import techMobile from '../svg/mobile/02_Technologies.svg';
+import deployMobile from '../svg/mobile/03_Deployment.svg';
+import customMobile from '../svg/mobile/04_Customization.svg';
+import resultMobile from '../svg/mobile/05_Result.svg';
 
 
-class VideoModule extends Component {
-  constructor(props){
-    super(props)
+
+class AssetModule extends Component {
+  constructor(){
+    super()
     this.state = {
-      activeIndex: 0,
-      autoplay: true
-    }
-    this.goToImage      = this.goToImage.bind(this);
-    this.autoplayVideos = this.autoplayVideos.bind(this);
-    this.goToNextVideo  = this.goToNextVideo.bind(this);
-  }
-
-  componentDidMount(){
-    this.autoplayVideos()
-  }
-
-  autoplayVideos(){
-    if(this.state.autoplay){
-      let x = window.setInterval(() => {
-        this.goToNextVideo()
-      }, 3000)
-      this.setState({ interval: x })
-    } else {
-      let x = window.clearInterval(this.state.interval)
-      this.setState({ interval : x })
+      autoplay: true,
+      active: assets.usecase
     }
   }
 
-  goToNextVideo(){
-    this.setState({ activeIndex: this.state.activeIndex + 1})
+  renderVideo(){
+
   }
 
-  goToImage(index){
-    this.setState({
-      activeIndex: index
-    })
-  }
+
 
   render() {
     return (
       <div className="video-container">
         <div className="auth0-intro">What's' Auth0 </div>
 
+        <VideoAutoplay source={this.state.active.video.source}/>
 
-        {this.props.assets.map((asset, index) =>
-          <AssetText
-            key={index}
-            index={index}
-            activeIndex={this.state.activeIndex}
-            text={asset.text}
-           />
-         )}
-
-
-         {this.props.assets.map((asset, index) =>
-           <VideoAutoplay
-             key={index}
-             index={index}
-             activeIndex={this.state.activeIndex}
-             svg={asset.desktop}
-             video={asset.video.source}
-            />
-          )}
-
-
-        <div className="navigation">
-          {this.props.assets.map((asset, index) =>
-          <NavButton
-            key={index}
-            index={index}
-            label={asset.name}
-            activeIndex={this.state.activeIndex}
-            isActive={this.state.activeIndex===index}
-            onClick={e => this.goToImage(index)}
-          />
-        )}
       </div>
-    </div>
     );
   }
 }
 
-export default VideoModule;
+export default AssetModule;
 
 const assets = {
 
