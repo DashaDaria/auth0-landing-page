@@ -3,6 +3,7 @@ import './VideoModule.css';
 import AssetCreative from './AssetCreative';
 import AssetText from './AssetText';
 import NavButton from './NavButton';
+import VideoAutoplay from './VideoAutoplay';
 
 
 class VideoModule extends Component {
@@ -38,7 +39,7 @@ class VideoModule extends Component {
 
 
          {this.props.assets.map((asset, index) =>
-           <AssetCreative
+           <VideoAutoplay
              key={index}
              index={index}
              activeIndex={this.state.activeIndex}

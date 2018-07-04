@@ -1,9 +1,8 @@
 .video-container {
   position: absolute;
   top: 22%;
-  left: 8.33%;
-  right: 8.33%;
-  width: 1200px;
+  margin-left: 10%;
+  margin-right: 10%;
   height: 879px;
   background: #F8F8F8;
   box-shadow: 0px 20px 70px rgba(0, 0, 0, 0.2);
@@ -20,25 +19,9 @@
   color: #333333;
 }
 
-.asset-text {
-  display: none;
-
-}
-
-.asset-text-active {
-  position: relative;
-  top: 12%;
-  line-height: 32px;
-  font-size: 20px;
-  text-align: center;
-  color: #5C666F;
-  padding-left: 8em;
-  padding-right: 8em;
-  font-family: 'FaktPro-Normal';
-}
-
 .navigation {
   padding-left: 2%;
   padding-right: 2%;
   text-align: center;
+  margin-top: 2em;
 }

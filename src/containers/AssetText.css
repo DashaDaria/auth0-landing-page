@@ -1,0 +1,17 @@
+.asset-text {
+  display: none;
+
+}
+
+.asset-text-active {
+  position: relative;
+  top: 12%;
+  height: 3em;
+  line-height: 30px;
+  font-size: 18px;
+  text-align: center;
+  color: #5C666F;
+  padding-left: 8em;
+  padding-right: 8em;
+  font-family: 'FaktPro-Normal';
+}

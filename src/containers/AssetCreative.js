@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './AssetCreative.css';
+import './AssetText.css';
 
 class AssetCreative extends Component {
 

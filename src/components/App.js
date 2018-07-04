@@ -47,34 +47,39 @@ const assetData = [
     text: "Choose your use case. Auth0’s Universal Identity Platform for web, mobile and IoT can handle any of them — B2C, B2B, B2E or a combination.",
     video: usecase,
     desktop: usecaseDesktop,
-    mobile: usecaseMobile
+    mobile: usecaseMobile,
+    color: "#40BEEA"
   },
   {
     name: "Technologies",
     text:"Your language. Your stack. Auth0 can connect to any application or API. Our 65+ SDKs and pre-configured Quickstarts offer rapid integration.",
     video: tech,
     desktop: techDesktop,
-    mobile: techMobile
+    mobile: techMobile,
+    color: "#00B08C"
   },
   {
     name: "Deployment",
     text:"Choose the deployment that suits your needs — your cloud, Auth0 Cloud, on-premise, or hybrid.",
     video: deploy,
     desktop: deployDesktop,
-    mobile: deployMobile
+    mobile: deployMobile,
+    color: "#E9CF51"
   },
   {
     name: "Customization",
     text:"Easily customize your app’s authentication process by writing code or picking one of our 100+ pre-built Auth0 Rules and Extensions.",
     video: custom,
     desktop: customDesktop,
-    mobile: customMobile
+    mobile: customMobile,
+    color: "#FB9D5E"
   },
   {
     name: "Result",
     text:"Your use case(s) + Your tech stack + Your deployment model + Your customization + Your changing needs = a seamless and secure Auth0 Identity solution that adapts to your future.",
     video: result,
     desktop: resultDesktop,
-    mobile: resultMobile
+    mobile: resultMobile,
+    color: "#EA5323"
   }
 ]
