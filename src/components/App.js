@@ -3,13 +3,13 @@ import './App.css';
 import Intro from  './Intro';
 import Static from  './Static';
 import Columns from  './Columns';
-import AssetModule from  '../containers/AssetModule';
+import AssetsLogic from  '../containers/AssetsLogic';
 
 class App extends Component {
   render() {
     return (
       <div className="app-container">
-        <AssetModule/>
+        <AssetsLogic/>
         <Intro />
         <Static />
         <Columns />

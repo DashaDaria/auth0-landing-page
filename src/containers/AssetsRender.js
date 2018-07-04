@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './VideoAutoplay.css';
+import './AssetsRender.css';
 
-class VideoAutoplay extends Component {
+class AssetsRender extends Component {
   constructor() {
     super()
 
@@ -34,13 +34,11 @@ class VideoAutoplay extends Component {
 
   render() {
     return (
-
       <div>
-        <video src={this.props.video.source} className="video-autoplay-active" autoPlay muted>
-        </video>
+        <video src={this.props.video.source} className="video-autoplay-active" autoPlay muted></video>
       </div>
     );
   }
 }
 
-export default VideoAutoplay;
+export default AssetsRender;

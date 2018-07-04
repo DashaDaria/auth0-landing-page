@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './AssetModule.css';
-import VideoAutoplay from './VideoAutoplay'
+import './AssetsLogic.css';
+import AssetsRender from './AssetsRender'
 
 ////////VIDEOS//////
 import usecase from '../videos/01_UseCase.mp4';
@@ -23,9 +23,7 @@ import deployMobile from '../svg/mobile/03_Deployment.svg';
 import customMobile from '../svg/mobile/04_Customization.svg';
 import resultMobile from '../svg/mobile/05_Result.svg';
 
-
-
-class AssetModule extends Component {
+class AssetsLogic extends Component {
   constructor() {
     super()
     this.state = {
@@ -47,14 +45,14 @@ class AssetModule extends Component {
       <div className="video-container">
         <div className="auth0-intro">What's' Auth0 </div>
 
-        <VideoAutoplay video={this.state.current_video} changeVideo={this.changeVideo}/>
+        <AssetsRender video={this.state.current_video} changeVideo={this.changeVideo}/>
 
       </div>
     );
   }
 }
 
-export default AssetModule;
+export default AssetsLogic;
 
 const assets = {
   usecase: {
