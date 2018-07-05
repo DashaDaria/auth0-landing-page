@@ -42,12 +42,9 @@ class AssetsLogic extends Component {
 
   render() {
     return (
-      <div className="video-container">
-        <div className="auth0-intro">What's' Auth0 </div>
 
         <AssetsRender video={this.state.current_video} changeVideo={this.changeVideo}/>
 
-      </div>
     );
   }
 }
@@ -59,7 +56,7 @@ const assets = {
     name: "Use Case",
     text: "Choose your use case. Auth0’s Universal Identity Platform for web, mobile and IoT can handle any of them — B2C, B2B, B2E or a combination.",
     source: usecase,
-    duration: 8000,
+    duration: 1000,
     next_video: 'tech',
     desktop: usecaseDesktop,
     mobile: usecaseMobile,
@@ -69,7 +66,7 @@ const assets = {
     name: "Technologies",
     text:"Your language. Your stack. Auth0 can connect to any application or API. Our 65+ SDKs and pre-configured Quickstarts offer rapid integration.",
     source: tech,
-    duration: 10000,
+    duration: 1000,
     next_video: 'deploy',
     desktop: techDesktop,
     mobile: techMobile,
@@ -79,7 +76,7 @@ const assets = {
     name: "Deployment",
     text:"Choose the deployment that suits your needs — your cloud, Auth0 Cloud, on-premise, or hybrid.",
     source: deploy,
-    duration: 6000,
+    duration: 1000,
     next_video: 'custom',
     desktop: deployDesktop,
     mobile: deployMobile,
@@ -89,7 +86,7 @@ const assets = {
     name: "Customization",
     text:"Easily customize your app’s authentication process by writing code or picking one of our 100+ pre-built Auth0 Rules and Extensions.",
     source: custom,
-    duration: 30000,
+    duration: 1000,
     next_video: 'result',
     desktop: customDesktop,
     mobile: customMobile,
@@ -99,7 +96,7 @@ const assets = {
     name: "Result",
     text:"Your use case(s) + Your tech stack + Your deployment model + Your customization + Your changing needs = a seamless and secure Auth0 Identity solution that adapts to your future.",
     source: result,
-    duration: 4000,
+    duration: 5000,
     next_video: 'usecase',
     desktop: resultDesktop,
     mobile: resultMobile,
