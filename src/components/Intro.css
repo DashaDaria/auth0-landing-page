@@ -36,6 +36,10 @@
   padding-right: 14em;
 }
 
+.mobile-cta{
+  display: none;
+}
+
 .caret-down {
   border-top: 6px solid white;
   border-left: 5px solid rgba(0, 0, 0, 0);
@@ -51,4 +55,97 @@
   height: 10em;
   margin-left: 50%;
   margin-top: -5px;
+}
+
+@media screen and (max-width: 1000px){
+  .intro-video{
+    display: none;
+    top: 0;
+  }
+  .intro-header {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    background:#FFFFFF;
+    padding: 1em;
+  }
+
+  .mobile-header img{
+    object-fit: contain;
+  }
+
+  .hamburger-menu {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .long-line{
+    width: 50px;
+    height: 3px;
+    background-color: #DADADA;
+    margin: 5px 0;
+  }
+  .middle-line{
+    width: 35px;
+    height: 3px;
+    background-color: #DADADA;
+    margin: 5px 0;
+  }
+
+  .intro-subheader {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+@media screen and (max-width: 600px){
+
+  .intro-text-container {
+    top: 5em;
+  }
+  .intro-header {
+    line-height: 54px;
+    font-size: 44px;
+    letter-spacing: -0.5px;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .intro-subheader {
+    line-height: 32px;
+    font-size: 18px;
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+
+  .mobile-cta{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .std-button{
+    background: #EB5424;
+    border-radius: 3px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    line-height: 16px;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: "FaktProUI-SemiBold";
+    height: 5em;
+    margin: 1em 3em;
+  }
+
+
+  .caret-down {
+    margin-top: 15em;
+  }
+
 }

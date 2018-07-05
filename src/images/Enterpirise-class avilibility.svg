@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Enterpirise-class avilibility</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage_Hero_1" transform="translate(-169.000000, -2301.000000)">
+            <g id="Enterpirise-class-avilibility" transform="translate(170.000000, 2302.000000)">
+                <g id="Group-3">
+                    <circle id="Oval" stroke="#323232" cx="18" cy="18" r="18"></circle>
+                    <ellipse id="Oval-5" stroke="#323232" cx="18.5" cy="18" rx="4.5" ry="10"></ellipse>
+                    <path d="M8.5,15.5 L27.5262976,15.5" id="Line" stroke="#E95430" stroke-linecap="square"></path>
+                    <path d="M8.5,21.5 L27.5262976,21.5" id="Line" stroke="#E95430" stroke-linecap="square"></path>
+                    <circle id="Oval-6" stroke="#333333" cx="18" cy="18" r="10"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

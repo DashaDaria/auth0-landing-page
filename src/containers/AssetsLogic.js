@@ -39,17 +39,7 @@ class AssetsLogic extends Component {
       current_asset: next_video,
       autoplay: autoplay
     })
-    //  else {
-    //   this.goToImage()
-    // }
   }
-
-  // goToImage(name){
-  //   let requested_asset = assets[name]
-  //   this.setState({
-  //     current_asset: requested_asset.desktop
-  //   })
-  // }
 
   render() {
     return (
@@ -68,7 +58,7 @@ const assets = {
     key: 'usecase',
     text: "Choose your use case. Auth0’s Universal Identity Platform for web, mobile and IoT can handle any of them — B2C, B2B, B2E or a combination.",
     source: usecase,
-    duration: 1000,
+    duration: 8000,
     next_video: 'tech',
     desktop: usecaseDesktop,
     mobile: usecaseMobile,
@@ -79,7 +69,7 @@ const assets = {
     key: 'tech',
     text:"Your language. Your stack. Auth0 can connect to any application or API. Our 65+ SDKs and pre-configured Quickstarts offer rapid integration.",
     source: tech,
-    duration: 1000,
+    duration: 10000,
     next_video: 'deploy',
     desktop: techDesktop,
     mobile: techMobile,
@@ -90,7 +80,7 @@ const assets = {
     key: 'deploy',
     text:"Choose the deployment that suits your needs — your cloud, Auth0 Cloud, on-premise, or hybrid.",
     source: deploy,
-    duration: 1000,
+    duration: 6000,
     next_video: 'custom',
     desktop: deployDesktop,
     mobile: deployMobile,
@@ -101,7 +91,7 @@ const assets = {
     key: 'custom',
     text:"Easily customize your app’s authentication process by writing code or picking one of our 100+ pre-built Auth0 Rules and Extensions.",
     source: custom,
-    duration: 1000,
+    duration: 30000,
     next_video: 'result',
     desktop: customDesktop,
     mobile: customMobile,
@@ -112,7 +102,7 @@ const assets = {
     key: 'result',
     text:"Your use case(s) + Your tech stack + Your deployment model + Your customization + Your changing needs = a seamless and secure Auth0 Identity solution that adapts to your future.",
     source: result,
-    duration: 5000,
+    duration: 4000,
     next_video: 'usecase',
     desktop: resultDesktop,
     mobile: resultMobile,

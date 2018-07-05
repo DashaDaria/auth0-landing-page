@@ -58,7 +58,7 @@ class AssetsRender extends Component {
   }
 
   render() {
-    let { text, name, key } = this.props.video
+    let { text, key } = this.props.video
     return (
       <div className="video-container">
 

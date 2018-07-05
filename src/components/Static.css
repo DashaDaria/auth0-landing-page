@@ -1,7 +1,7 @@
 .static-container {
   background: #FFFFFF;
   width: 100%;
-  height: 73em;
+  height:75em;
   position: relative;
 }
 .map {
@@ -14,7 +14,7 @@
   position: absolute;
   text-align: center;
   height: 44em;
-  top: 310px;
+  top: 35%;
 }
 
 .brands-title {
