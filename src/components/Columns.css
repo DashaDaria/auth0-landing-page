@@ -78,10 +78,74 @@
 .flag-container {
   flex-wrap: wrap;
   width: 50%;
+  margin:0;
 }
 
 .flag {
 	height: 20px;
   margin-right: 10px;
+}
 
+.icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px){
+
+  .columns{
+    flex-direction: column;
+  }
+
+  .column-header {
+    font-size: 32px;
+  }
+
+  .left, .right {
+    border: none;
+    padding: 2%;
+    width: 96%;
+    text-align: center;
+  }
+  .left {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('../images/touch.svg');
+    background-size: 80%;
+    background-position: right -6em bottom 3em;
+    background-repeat: no-repeat;
+  }
+
+  .right {
+    background-image: url('../images/BG_map.svg');
+    background-position: bottom -20em;
+    background-repeat: no-repeat;
+  }
+
+  .subcolumns{
+    border-top: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .subcolumn-left, .subcolumn-right {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  .flag-container{
+    display: flex;
+    justify-content: flex-start;
+    height: 3em;
+  }
+
+  .column-numbers {
+    font-size: 50px;
+  }
+
+  .column-fineprint{
+    opacity: 0.5;
+  }
+  .icon {
+    display: block;
+
+  }
 }

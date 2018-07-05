@@ -20,7 +20,7 @@ class Intro extends Component {
           <source src={atom} type='video/mp4'/>
           </video>
         <div className="intro-text-container">
-          <h1 className="intro-header">Never Compromise on <span className="identity-color">Identity</span></h1>
+          <h1 className="intro-header">Never compromise on <span className="identity-color">identity</span></h1>
           <p className="intro-subheader">We provide a universal authentication & authorization platform for web, mobile and legacy applications.</p>
 
           <div className="mobile-cta">

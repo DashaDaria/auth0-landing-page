@@ -41,21 +41,7 @@ class AssetsRender extends Component {
   }
 
   handleScroll(event){
-    // console.log('scroll', event)
-  }
-
-  renderAsset() {
-    let { source, desktop, name } = this.props.video
-
-    if (this.props.autoplay) {
-      return <video src={source} className="video-autoplay-active" autoPlay muted></video>
-    } else {
-      return (
-        <div className="desktop-svg">
-          <img src={desktop} alt={name} />
-        </div>
-      )
-    }
+    console.log('scroll', event)
   }
 
   render() {
@@ -67,7 +53,7 @@ class AssetsRender extends Component {
         <p className="asset-text"> {text} </p>
 
 
-        <MediaQuery maxDeviceWidth={600}>
+        <MediaQuery maxWidth={960}>
         {(matches) => {
           if(matches && !this.props.autoplay){
             return <div className="mobile-svg"><img src={mobile} alt={name} /></div>

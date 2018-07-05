@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './AssetsLogic.css';
 import AssetsRender from './AssetsRender'
 
 ////////VIDEOS//////
