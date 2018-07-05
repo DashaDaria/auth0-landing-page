@@ -25,7 +25,7 @@ class Intro extends Component {
 
           <div className="mobile-cta">
             <button className="std-button">Get Started ➔</button>
-            <button className="std-button">Read The Docs</button>
+            <button className="std-button" id="read">Read The Docs</button>
           </div>
 
           <div className="caret-down"></div>

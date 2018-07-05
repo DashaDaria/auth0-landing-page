@@ -5,6 +5,8 @@
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-media": "^1.8.0",
+    "react-responsive": "^4.1.0",
     "react-scripts": "1.1.4"
   },
   "scripts": {

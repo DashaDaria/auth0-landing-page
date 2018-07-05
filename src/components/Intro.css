@@ -133,7 +133,8 @@
 
   .std-button{
     background: #EB5424;
-    border-radius: 3px;
+    border-color: #EB5424;
+    border-radius: 3px solid #EB5424;
     color: #FFFFFF;
     text-transform: uppercase;
     line-height: 16px;
@@ -145,6 +146,10 @@
     margin: 1em 3em;
   }
 
+  .std-button#read {
+    background:rgba(0, 0, 0, 0);
+    border-color: #FFFFFF;
+  }
 
   .caret-down {
     margin-top: 10em;

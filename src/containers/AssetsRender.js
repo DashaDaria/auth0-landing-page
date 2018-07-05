@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './AssetsRender.css';
+import MediaQuery from 'react-responsive';
 
 class AssetsRender extends Component {
   constructor() {
@@ -58,14 +59,26 @@ class AssetsRender extends Component {
   }
 
   render() {
-    let { text, key } = this.props.video
+    let { text, key, desktop, mobile, name, source } = this.props.video
     return (
       <div className="video-container">
 
         <h1 className="auth0-intro">What's' Auth0 </h1>
         <p className="asset-text"> {text} </p>
 
-        { this.renderAsset() }
+
+        <MediaQuery maxDeviceWidth={600}>
+        {(matches) => {
+          if(matches && !this.props.autoplay){
+            return <div className="mobile-svg"><img src={mobile} alt={name} /></div>
+          } else if(!matches && !this.props.autoplay){
+            return <div className="desktop-svg"><img src={desktop} alt={name} /></div>
+          } else {
+            return <video src={source} className="video-autoplay-active" autoPlay muted></video>
+          }
+        }}
+        </MediaQuery>
+
 
         <div className="navigation">
           <button className={key === "usecase" ? 'nav-button-active' : 'nav-button'} id={key === "result" ? "black" : ""}
