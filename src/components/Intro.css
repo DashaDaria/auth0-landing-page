@@ -76,6 +76,7 @@
 
   .mobile-header img{
     object-fit: contain;
+    padding-left: 1em;
   }
 
   .hamburger-menu {
@@ -152,7 +153,7 @@
   }
 
   .caret-down {
-    margin-top: 10em;
+    margin-top: 3em;
   }
 
 }

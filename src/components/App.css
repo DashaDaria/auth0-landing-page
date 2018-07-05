@@ -3,3 +3,10 @@
   max-width: 1440px;
   width: 100%;
 }
+
+@media screen and (max-width: 600px){
+
+  .app-container {
+    width: 128%;
+  }
+}
