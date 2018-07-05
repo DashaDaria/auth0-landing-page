@@ -104,7 +104,9 @@
 }
 
 @media screen and (max-width: 600px){
-
+  .intro-container {
+    height: auto;
+  }
   .intro-text-container {
     top: 5em;
   }
@@ -145,7 +147,7 @@
 
 
   .caret-down {
-    margin-top: 15em;
+    margin-top: 10em;
   }
 
 }

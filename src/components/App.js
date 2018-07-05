@@ -9,8 +9,8 @@ class App extends Component {
   render() {
     return (
       <div className="app-container">
-        <AssetsLogic/>
         <Intro />
+        <AssetsLogic/>
         <Static />
         <Columns />
       </div>

@@ -121,3 +121,42 @@
   display: flex;
   justify-content: center
 }
+
+@media screen and (max-width: 600px){
+  .video-container {
+    position: relative;
+    top:-40px;
+    margin:0;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0px;
+  }
+  .navigation {
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+  }
+
+  .nav-button {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 15em;
+    margin: 5px 5px 5px 5px;
+    padding-left: 30px;
+  }
+
+  .nav-button-active {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 15em;
+    margin: 5px 5px 5px 5px;
+    padding-left: 30px;
+  }
+  .circle {
+    position: absolute;
+    margin: 7px 1px 1px -20px;
+  }
+}

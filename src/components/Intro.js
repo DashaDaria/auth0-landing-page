@@ -24,7 +24,7 @@ class Intro extends Component {
           <p className="intro-subheader">We provide a universal authentication & authorization platform for web, mobile and legacy applications.</p>
 
           <div className="mobile-cta">
-            <button className="std-button">Get Started</button>
+            <button className="std-button">Get Started ➔</button>
             <button className="std-button">Read The Docs</button>
           </div>
 
