@@ -28,22 +28,33 @@ class AssetsLogic extends Component {
     super()
     this.state = {
       autoplay: true,
-      current_video: assets.usecase
+      current_asset: assets.usecase
     }
     this.changeVideo  = this.changeVideo.bind(this)
   }
 
-  changeVideo(video_name) {
+  changeVideo(video_name, autoplay) {
     let next_video = assets[video_name]
     this.setState({
-      current_video: next_video
+      current_asset: next_video,
+      autoplay: autoplay
     })
+    //  else {
+    //   this.goToImage()
+    // }
   }
+
+  // goToImage(name){
+  //   let requested_asset = assets[name]
+  //   this.setState({
+  //     current_asset: requested_asset.desktop
+  //   })
+  // }
 
   render() {
     return (
 
-        <AssetsRender video={this.state.current_video} changeVideo={this.changeVideo}/>
+        <AssetsRender video={this.state.current_asset} autoplay={this.state.autoplay} changeVideo={this.changeVideo}/>
 
     );
   }
@@ -54,6 +65,7 @@ export default AssetsLogic;
 const assets = {
   usecase: {
     name: "Use Case",
+    key: 'usecase',
     text: "Choose your use case. Auth0’s Universal Identity Platform for web, mobile and IoT can handle any of them — B2C, B2B, B2E or a combination.",
     source: usecase,
     duration: 1000,
@@ -64,6 +76,7 @@ const assets = {
   },
   tech: {
     name: "Technologies",
+    key: 'tech',
     text:"Your language. Your stack. Auth0 can connect to any application or API. Our 65+ SDKs and pre-configured Quickstarts offer rapid integration.",
     source: tech,
     duration: 1000,
@@ -74,6 +87,7 @@ const assets = {
   },
   deploy: {
     name: "Deployment",
+    key: 'deploy',
     text:"Choose the deployment that suits your needs — your cloud, Auth0 Cloud, on-premise, or hybrid.",
     source: deploy,
     duration: 1000,
@@ -84,6 +98,7 @@ const assets = {
   },
   custom: {
     name: "Customization",
+    key: 'custom',
     text:"Easily customize your app’s authentication process by writing code or picking one of our 100+ pre-built Auth0 Rules and Extensions.",
     source: custom,
     duration: 1000,
@@ -94,6 +109,7 @@ const assets = {
   },
   result: {
     name: "Result",
+    key: 'result',
     text:"Your use case(s) + Your tech stack + Your deployment model + Your customization + Your changing needs = a seamless and secure Auth0 Identity solution that adapts to your future.",
     source: result,
     duration: 5000,

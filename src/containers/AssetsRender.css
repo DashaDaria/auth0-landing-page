@@ -112,3 +112,11 @@
 .circle#color-usecase {
   background: #40BEEA;
 }
+
+.desktop-svg {
+  margin-top: 11%;
+  height: 32em;
+  width:100%;
+  display: flex;
+  justify-content: center
+}
