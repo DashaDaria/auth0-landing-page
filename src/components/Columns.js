@@ -24,7 +24,7 @@ class Columns extends Component {
             </div>
             <div className="subcolumn-right">
               <div className="column-numbers">1.3M<span className="identity-color">+</span></div>
-              <div className="column-fineprint">Malicious Logins Prevented</div>
+              <div className="column-fineprint">Malicious Logins</div>
               <div className="column-fineprint">Prevented</div>
             </div>
           </aside>

@@ -42,12 +42,10 @@ class AssetsLogic extends Component {
 
   render() {
     return (
-
-        <AssetsRender video={this.state.current_asset} autoplay={this.state.autoplay} changeVideo={this.changeVideo}/>
-
-    );
+      <AssetsRender video={this.state.current_asset} autoplay={this.state.autoplay} changeVideo={this.changeVideo}/>
+      );
+    }
   }
-}
 
 export default AssetsLogic;
 
@@ -60,8 +58,7 @@ const assets = {
     duration: 8000,
     next_video: 'tech',
     desktop: usecaseDesktop,
-    mobile: usecaseMobile,
-    color: "#40BEEA"
+    mobile: usecaseMobile
   },
   tech: {
     name: "Technologies",
@@ -71,8 +68,7 @@ const assets = {
     duration: 10000,
     next_video: 'deploy',
     desktop: techDesktop,
-    mobile: techMobile,
-    color: "#00B08C"
+    mobile: techMobile
   },
   deploy: {
     name: "Deployment",
@@ -82,8 +78,7 @@ const assets = {
     duration: 6000,
     next_video: 'custom',
     desktop: deployDesktop,
-    mobile: deployMobile,
-    color: "#E9CF51"
+    mobile: deployMobile
   },
   custom: {
     name: "Customization",
@@ -93,8 +88,7 @@ const assets = {
     duration: 30000,
     next_video: 'result',
     desktop: customDesktop,
-    mobile: customMobile,
-    color: "#FB9D5E"
+    mobile: customMobile
   },
   result: {
     name: "Result",
@@ -104,7 +98,6 @@ const assets = {
     duration: 4000,
     next_video: 'usecase',
     desktop: resultDesktop,
-    mobile: resultMobile,
-    color: "#EA5323"
+    mobile: resultMobile
   }
 }

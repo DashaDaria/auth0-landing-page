@@ -115,7 +115,7 @@
 
   .right {
     background-image: url('../images/BG_map.svg');
-    background-position: bottom -20em;
+    background-position: right -6em bottom -18em;
     background-repeat: no-repeat;
   }
 
@@ -144,6 +144,7 @@
     display: flex;
     justify-content: flex-start;
     height: 3em;
+    margin-top: 1em;
   }
 
   .column-numbers {
@@ -153,8 +154,12 @@
   .column-fineprint{
     opacity: 0.5;
   }
+
   .icon {
     display: block;
+  }
 
+  .number-flag-container{
+    justify-content: flex-end;
   }
 }
