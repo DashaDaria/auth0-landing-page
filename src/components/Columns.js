@@ -17,7 +17,7 @@ class Columns extends Component {
           <h2 className="column-header">Risk-based, security-first approach.</h2>
           <p className="column-subheader">Robust security architecture and features providing adaptive multi-layer security, designed by world-class security experts.</p>
           <aside className="subcolumns">
-            <div className="subcolumn-left">
+            <div className="subcolumn-left" id="midline">
               <div className="column-numbers">1.1B<span className="identity-color">+</span></div>
               <div className="column-fineprint">Monthly Logins</div>
               <div className="column-fineprint">Securely Authenticated</div>
@@ -36,7 +36,7 @@ class Columns extends Component {
           <h2 className="column-header">Enterprise-class availability. Always ready.</h2>
           <p className="column-subheader">Advanced infrastructure ensuring high availability and resiliency for its users with globally distributed data centers and full disaster recovery systems.</p>
           <aside className="subcolumns">
-            <div className="subcolumn-right">
+            <div className="subcolumn-right" id="midline">
             <div className="number-flag-container">
               <div className="column-numbers">3</div>
                 <figure className="flag-container">

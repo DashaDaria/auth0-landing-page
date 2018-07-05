@@ -156,32 +156,33 @@
 
   .navigation {
     display: flex;
+    justify-content: space-around;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    margin-bottom: 10px;
+  }
+
+
+  button.nav-button-active, button.nav-button {
+    margin:10px;
+    padding: 25px 55px;
+    border-radius: 3px;
+    padding-left: 60px;
+    font-size: 20px;
   }
 
   .nav-button {
     border: 1px solid #D0D2D3;
-    box-sizing: border-box;
     opacity: 1;
-    border-radius: 3px;
-    width: 17em;
-    margin: 5px;
-    padding-left: 30px;
   }
 
   .nav-button-active {
     border: 1px solid #000000;
-    box-sizing: border-box;
-    border-radius: 3px;
-    width: 17em;
-    margin: 5px;
-    padding-left: 30px;
-  }
+}
+
   .circle {
     position: absolute;
     margin: 7px 1px 1px -20px;
+    overflow: hidden;
   }
 }

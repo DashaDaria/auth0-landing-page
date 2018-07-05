@@ -70,40 +70,79 @@ class AssetsRender extends Component {
           <button className={key === "usecase" ? 'nav-button-active' : 'nav-button'} id={key === "result" ? "black" : ""}
           onClick={e => this.changeVideo('usecase', false)}
           >
-            <div className="circle" id={key === "result" ? "color-usecase" : "no-color"}></div>
+        <MediaQuery maxWidth={600}>
+            {(matches) => {
+              if(matches){
+                return <div className="circle" id="color-usecase"></div>
+              } else {
+                return <div className="circle" id={key === "result" ? "color-usecase" : "no-color"}></div>
+              }
+            }}
+          </MediaQuery>
             Use Case
           </button>
 
           <button className={key === "tech" ? 'nav-button-active' : 'nav-button'} id={key === "result" ? "black" : ""}
           onClick={e => this.changeVideo('tech', false)}
           >
-            <div className="circle" id={key === "result" ? "color-tech" : "no-color"}></div>
+          <MediaQuery maxWidth={600}>
+              {(matches) => {
+                if(matches){
+                  return <div className="circle" id="color-tech"></div>
+                } else {
+                  return <div className="circle" id={key === "result" ? "color-tech" : "no-color"}></div>
+                }
+              }}
+            </MediaQuery>
             Technologies
           </button>
 
           <button className={key === "deploy" ? 'nav-button-active' : 'nav-button'} id={key === "result" ? "black" : ""}
           onClick={e => this.changeVideo('deploy', false)}
           >
-            <div className="circle" id={key === "result" ? "color-deploy" : "no-color"}></div>
+          <MediaQuery maxWidth={600}>
+              {(matches) => {
+                if(matches){
+                  return <div className="circle" id="color-deploy"></div>
+                } else {
+                  return <div className="circle" id={key === "result" ? "color-deploy" : "no-color"}></div>
+                }
+              }}
+            </MediaQuery>
             Deployment
           </button>
 
           <button className={key === "custom" ? 'nav-button-active' : 'nav-button'} id={key === "result" ? "black" : ""}
           onClick={e => this.changeVideo('custom', false)}
           >
-            <div className="circle" id={key === "result" ? "color-custom" : "no-color"}></div>
+          <MediaQuery maxWidth={600}>
+              {(matches) => {
+                if(matches){
+                  return <div className="circle" id="color-custom"></div>
+                } else {
+                  return <div className="circle" id={key === "result" ? "color-custom" : "no-color"}></div>
+                }
+              }}
+            </MediaQuery>
             Customization
           </button>
 
           <button className={key === "result" ? 'nav-button-active' : 'nav-button'} id={key === "result" ? "black" : ""}
           onClick={e => this.changeVideo('result', false)}
           >
-            <div className="circle" id={key === "result" ? "color-result" : "no-color"}></div>
+          <MediaQuery maxWidth={600}>
+              {(matches) => {
+                if(matches){
+                  return <div className="circle" id="color-result"></div>
+                } else {
+                  return <div className="circle" id={key === "result" ? "color-result" : "no-color"}></div>
+                }
+              }}
+            </MediaQuery>
+
             Result
           </button>
         </div>
-
-
       </div>
     );
   }
