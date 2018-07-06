@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Intro.css';
+import atom1 from '../videos/atom1.mp4';
 import atom from '../videos/atom.mp4';
 import auth0 from '../images/auth0.png';
 
@@ -16,9 +17,8 @@ class Intro extends Component {
             <div className="long-line"></div>
           </div>
         </header>
-        <video className="intro-video" autoPlay loop muted>
-          <source src={atom} type='video/mp4'/>
-          </video>
+        <video src={atom1} className="intro-video" autoPlay muted></video>
+        <video src={atom} className="intro-video" autoPlay loop muted></video>
         <div className="intro-text-container">
           <h1 className="intro-header">Never compromise on <span className="identity-color">identity</span></h1>
           <p className="intro-subheader">We provide a universal authentication & authorization platform for web, mobile and legacy applications.</p>

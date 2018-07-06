@@ -7,20 +7,14 @@ class AssetsRender extends Component {
     super()
     this.setAutoPlayTimer = this.setAutoPlayTimer.bind(this)
     this.changeVideo = this.changeVideo.bind(this)
-    this.handleScroll = this.handleScroll.bind(this)
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll)
-    this.setAutoPlayTimer()
+      this.setAutoPlayTimer()
   }
 
   componentDidUpdate() {
     this.setAutoPlayTimer()
-  }
-
-  componentWillUnmount(){
-    window.removeEventListener('scroll', this.handleScroll)
   }
 
   setAutoPlayTimer() {
@@ -40,9 +34,6 @@ class AssetsRender extends Component {
     this.props.changeVideo(next_video, autoplay)
   }
 
-  handleScroll(event){
-    console.log('scroll', event)
-  }
 
   render() {
     let { text, key, desktop, mobile, name, source } = this.props.video
@@ -57,6 +48,8 @@ class AssetsRender extends Component {
         {(matches) => {
           if(matches && !this.props.autoplay){
             return <div className="mobile-svg"><img src={mobile} alt={name} /></div>
+          } else if(matches && this.props.autoplay){
+            return <div className="mobile-svg"><img src={desktop} alt={name} /></div>
           } else if(!matches && !this.props.autoplay){
             return <div className="desktop-svg"><img src={desktop} alt={name} /></div>
           } else {
