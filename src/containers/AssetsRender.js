@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './AssetsRender.css';
 import MediaQuery from 'react-responsive';
+import TrackVisibility from 'react-on-screen';
 
 class AssetsRender extends Component {
   constructor() {
@@ -22,10 +23,17 @@ class AssetsRender extends Component {
       let current_video_duration = this.props.video.duration;
       let next_video             = this.props.video.next_video;
 
-      this.timerId = setInterval(
-        () => this.changeVideo(next_video, true),
-        current_video_duration
-      )
+      if(this.props.video.key === "custom"){
+        this.timerId = setInterval(
+          () => this.changeVideo(next_video, false),
+          current_video_duration
+        )
+      } else {
+        this.timerId = setInterval(
+          () => this.changeVideo(next_video, true),
+          current_video_duration
+        )
+      }
     }
   }
 
@@ -40,7 +48,7 @@ class AssetsRender extends Component {
     return (
       <div className="video-container">
 
-        <h1 className="auth0-intro">What's' Auth0 </h1>
+        <h1 className="auth0-intro">What's Auth0 </h1>
         <p className="asset-text"> {text} </p>
 
 
@@ -63,7 +71,7 @@ class AssetsRender extends Component {
           <button className={key === "usecase" ? 'nav-button-active' : 'nav-button'} id={key === "result" ? "black" : ""}
           onClick={e => this.changeVideo('usecase', false)}
           >
-        <MediaQuery maxWidth={600}>
+        <MediaQuery maxWidth={700}>
             {(matches) => {
               if(matches){
                 return <div className="circle" id="color-usecase"></div>
@@ -78,7 +86,7 @@ class AssetsRender extends Component {
           <button className={key === "tech" ? 'nav-button-active' : 'nav-button'} id={key === "result" ? "black" : ""}
           onClick={e => this.changeVideo('tech', false)}
           >
-          <MediaQuery maxWidth={600}>
+          <MediaQuery maxWidth={700}>
               {(matches) => {
                 if(matches){
                   return <div className="circle" id="color-tech"></div>
@@ -93,7 +101,7 @@ class AssetsRender extends Component {
           <button className={key === "deploy" ? 'nav-button-active' : 'nav-button'} id={key === "result" ? "black" : ""}
           onClick={e => this.changeVideo('deploy', false)}
           >
-          <MediaQuery maxWidth={600}>
+          <MediaQuery maxWidth={700}>
               {(matches) => {
                 if(matches){
                   return <div className="circle" id="color-deploy"></div>
@@ -108,7 +116,7 @@ class AssetsRender extends Component {
           <button className={key === "custom" ? 'nav-button-active' : 'nav-button'} id={key === "result" ? "black" : ""}
           onClick={e => this.changeVideo('custom', false)}
           >
-          <MediaQuery maxWidth={600}>
+          <MediaQuery maxWidth={700}>
               {(matches) => {
                 if(matches){
                   return <div className="circle" id="color-custom"></div>
@@ -123,7 +131,7 @@ class AssetsRender extends Component {
           <button className={key === "result" ? 'nav-button-active' : 'nav-button'} id={key === "result" ? "black" : ""}
           onClick={e => this.changeVideo('result', false)}
           >
-          <MediaQuery maxWidth={600}>
+          <MediaQuery maxWidth={700}>
               {(matches) => {
                 if(matches){
                   return <div className="circle" id="color-result"></div>

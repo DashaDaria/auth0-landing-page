@@ -40,21 +40,22 @@
   flex-wrap: wrap;
   padding-left: 5%;
   padding-right: 5%;
+  margin-bottom: 30px;
 }
 
 .logo {
   width: 130px;
   margin: 3em 2em 0em 2em;
-
 }
 
 .image-fit {
-  display: block;
+
   width: 100%;
 	height: auto;
   max-height: 60px;
   margin: auto;
-  filter: grayscale();
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .see-all {
@@ -66,10 +67,10 @@
   line-height: 40px;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
 
 .brands{
-  top: 2%;
+  top: -8%;
 }
 
 .static-container{
@@ -86,9 +87,12 @@
   }
 
   .all-logos {
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 10%;
+    padding-top: 20%;
+  }
+
+  .logo {
+    width: 130px;
+    margin: 3em 2em 0em 2em;
   }
 
 }

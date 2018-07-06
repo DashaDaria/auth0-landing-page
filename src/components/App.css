@@ -1,3 +1,9 @@
 .app-container {
   position: relative;
 }
+
+@media screen and (max-width: 700px){
+  .app-container {
+    overflow:hidden;
+  }
+}
